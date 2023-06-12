@@ -5,10 +5,19 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 
 SQL Queries:
+--Question 1: Which cities and countries have the highest level of transaction revenues on the site?
+
+SELECT SUM(revenue)DESC, country
+FROM analytics
+JOIN all_sessions
+ON all_sessions.fullvisitorid = analytics.fullvisitorid 
+WHERE revenue > 0
+GROUP BY country
 
 
 
-Answer:
+
+Answer: United States
 
 
 
