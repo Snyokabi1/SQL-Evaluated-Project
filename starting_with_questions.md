@@ -25,7 +25,16 @@ Answer: United States
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-SQL Queries:
+SQL Queries: --Question 2: What is the average number of products ordered from visitors in each city and country?
+
+SELECT AVG(units_sold)DESC, city, country
+FROM analytics
+JOIN all_sessions
+ON all_sessions.fullvisitorid = analytics.fullvisitorid 
+JOIN products
+ON products.sku = all_sessions.productsku
+WHERE units_sold>0
+GROUP BY city, country
 
 
 
