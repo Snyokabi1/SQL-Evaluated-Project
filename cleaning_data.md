@@ -1,4 +1,5 @@
 What issues will you address by cleaning the data?
+
 standardize formats time, productprice
 
 
