@@ -38,12 +38,28 @@ Answer: United States: unknown city, Mountain view
 
 SQL Queries: 
 --Question 2: What is the average number of products ordered from visitors in each city and country? 
+SELECT city, country, revenue, AVG(units_sold) units_sold
 
+FROM analytics
+
+JOIN all_sessions
+
+ON all_sessions.fullvisitorid = analytics.fullvisitorid 
+
+JOIN products
+
+ON products.sku = all_sessions.productsku
+
+WHERE units_sold>0 AND revenue>1
+
+GROUP BY analytics.revenue, city, country
+
+ORDER BY units_sold DESC, revenue DESC
 
 
 
 Answer: 
-
+the query returns units sold by city, with Mountain View USA leading with an average of 825
 
 
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
@@ -100,7 +116,7 @@ Answer: The Ballpoint LED Pen
 
 SQL Queries:
 
-SELECT city, country, revenue, AVG(units_sold) units_sold
+SELECT DISTINCT city, country, revenue, AVG(units_sold) units_sold
 
 FROM analytics
 
@@ -120,7 +136,7 @@ ORDER BY revenue DESC, units_sold DESC
 
 
 Answer:
-An unknown city (data missing) leads in revenue totalling 1587.06USD, followed by the city of Mountain view both in the USA.
+An unknown city (data missing) leads in revenue totalling 1587.06USD, followed by the city of Mountain view both in the USA, where majority of the buyers originate
 
 
 
