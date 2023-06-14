@@ -32,3 +32,28 @@ UPDATE all_sessions
 SET totaltransactionrevenue = totaltransactionrevenue / 1000000.0
 
 
+--Query to convert analytics.timeonsite to time format HH:MM:SS 
+
+ALTER TABLE analytics
+
+ALTER COLUMN timeonsite
+
+TYPE VARCHAR
+
+USING LPAD(timeonsite::VARCHAR, 6, '0');
+
+UPDATE analytics
+
+SET timeonsite = CONCAT(
+   
+    SUBSTRING(timeonsite, 1, 2),
+  
+    ':',
+    
+    SUBSTRING(timeonsite, 3, 2),
+    
+    ':',
+   
+    SUBSTRING(timeonsite, 5, 2)
+    
+);
