@@ -2,6 +2,8 @@
 
 ## Project/Goals
 (fill in your description and goals here)
+Apply and combined learned  and researched concepts in SQL to clean, QA, analyze and report on the ecomerce historical data. identify patterns, correlations between data types. 
+Aimed at identifying risks and potential opportunities for the ecommerce website.
 
 ## Process
 ### (your step 1)
