@@ -8,7 +8,8 @@ standardize formats time, productprice
 Queries:
 Below, provide the SQL queries you used to clean your data.
 
--- all_sessions table, time column -update the number of digits to 6, left padding with zeros. to be followed by conversion to time format
+-- all_sessions.time column 
+-- update the number of digits to 6, left padding with zeros. to be followed by conversion to time format
 
 ALTER TABLE all_sessions
 
@@ -57,3 +58,14 @@ SET timeonsite = CONCAT(
     SUBSTRING(timeonsite, 5, 2)
     
 );
+
+
+--convert analytics.visitstarttime to TIMESTAMPTZ format/datatype
+ALTER TABLE analytics
+
+ALTER visitstarttime 
+
+TYPE TIMESTAMPTZ
+
+USING timezone('UTC', TO_TIMESTAMP(visitstarttime))
+
