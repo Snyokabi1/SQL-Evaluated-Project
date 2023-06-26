@@ -16,12 +16,15 @@ The ecommerce site is located, or at least targetted at the US market, based on 
 
 ## Process
 ### (your step 1)
+
 Data cleaning, data quality assurance
+
 ### (your step 2)
+
 Data analysis, data interpretation
 
 ## Results
-(fill in what you discovered this data could tell you and how you used the data to answer those questions)
+
 The results are listed int he answers question of the document
 
 
