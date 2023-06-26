@@ -15,11 +15,11 @@ The ecommerce site is located, or at least targetted at the US market, based on 
 
 
 ## Process
-### (your step 1)
+### Step 1
 
 Employed standard data cleaning techniques detailed in the data cleaning and QA sections.
 
-### (your step 2)
+### Step 2
 
 Data analysis, data interpretation
 
