@@ -36,7 +36,7 @@ UPDATE all_sessions
 SET totaltransactionrevenue = totaltransactionrevenue / 1000000.0
 
 
-
+'''
 
 ALTER TABLE analytics
 
@@ -62,8 +62,12 @@ SET timeonsite = CONCAT(
     
 );
 
+'''
 
 --convert analytics.visitstarttime to TIMESTAMPTZ format/datatype
+
+'''
+
 ALTER TABLE analytics
 
 ALTER visitstarttime 
@@ -72,3 +76,4 @@ TYPE TIMESTAMPTZ
 
 USING timezone('UTC', TO_TIMESTAMP(visitstarttime))
 
+'''
