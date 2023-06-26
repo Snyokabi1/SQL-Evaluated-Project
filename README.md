@@ -1,15 +1,17 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-(fill in your description and goals here)
-Welcome to the SQL evaluated project
+
+Welcome to the SQL evaluated project.
+
 This project aimed at examining data comprising of 5 tables spanning a period of 1 year, for a e-commerce site.
-To apply combined, learned and researched concepts in SQL to clean, QA, analyze and report on the ecomerce historical data. Identify patterns, correlations between data types. 
-Aimed at identifying risks and potential opportunities for the ecommerce website.
+Applying combined, learned and researched concepts in SQL to clean, QA, analyze and report on the ecomerce historical data to identify patterns, correlations between data types, and draw informed conclusions and inferences from the data, for decision making and further investigation.
+
+
 
 # Assumptions
 
-The ecommerce site is located, or at least targetted at he US market, based on the majority of the transaction's geographical location
+The ecommerce site is located, or at least targetted at the US market, based on the majority of the transaction's geographical location
 
 
 ## Process
@@ -20,6 +22,7 @@ Data analysis, data interpretation
 
 ## Results
 (fill in what you discovered this data could tell you and how you used the data to answer those questions)
+The results are listed int he answers question of the document
 
 
 ## Challenges 
