@@ -7,6 +7,7 @@ Answer the following questions and provide the SQL queries used to find the answ
 SQL Queries:
 --Question 1: Which cities and countries have the highest level of transaction revenues on the site?
 
+'''
 SELECT city, country, revenue, AVG(units_sold) units_sold
 
 FROM analytics
@@ -24,6 +25,7 @@ WHERE units_sold>0 AND revenue>1
 GROUP BY analytics.revenue, city, country
 
 ORDER BY revenue DESC, units_sold DESC
+'''
 
 
 
@@ -38,6 +40,7 @@ Answer: United States: unknown city, Mountain view
 
 SQL Queries: 
 --Question 2: What is the average number of products ordered from visitors in each city and country? 
+'''
 SELECT city, country, revenue, AVG(units_sold) units_sold
 
 FROM analytics
@@ -55,6 +58,7 @@ WHERE units_sold>0 AND revenue>1
 GROUP BY analytics.revenue, city, country
 
 ORDER BY units_sold DESC, revenue DESC
+'''
 
 
 
@@ -66,6 +70,7 @@ the query returns units sold by city, with Mountain View USA leading with an ave
 
 
 SQL Queries:
+'''
 SELECT  sales_report.total_ordered, sales_report.name, city, country, visitid
 
 FROM sales_report
@@ -77,7 +82,7 @@ ON sales_report.productsku=all_sessions.productsku
 GROUP BY sales_report.total_ordered, sales_report.name,  all_sessions.visitid,all_sessions.city, all_sessions.country
 
 ORDER BY total_ordered DESC, city DESC, country DESC
-
+'''
 
 Answer:
 Yes, 
@@ -92,6 +97,7 @@ The ecommerce website is recieving attention from countires around the world, st
 
 
 SQL Queries:
+'''
 SELECT  sales_report.total_ordered, sales_report.name, city, country, visitid
 
 FROM sales_report
@@ -103,7 +109,7 @@ ON sales_report.productsku=all_sessions.productsku
 GROUP BY sales_report.total_ordered, sales_report.name,  all_sessions.visitid,all_sessions.city, all_sessions.country
 
 ORDER BY total_ordered DESC, city DESC, country DESC
-
+'''
 
 
 Answer: The Ballpoint LED Pen
@@ -115,7 +121,7 @@ Answer: The Ballpoint LED Pen
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 SQL Queries:
-
+'''
 SELECT DISTINCT city, country, revenue, AVG(units_sold) units_sold
 
 FROM analytics
@@ -133,7 +139,7 @@ WHERE units_sold>0 AND revenue>1
 GROUP BY analytics.revenue, city, country
 
 ORDER BY revenue DESC, units_sold DESC
-
+'''
 
 Answer:
 An unknown city (data missing) leads in revenue totalling 1587.06USD, followed by the city of Mountain view both in the USA, where majority of the buyers originate
