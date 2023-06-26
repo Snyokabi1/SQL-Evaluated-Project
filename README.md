@@ -4,7 +4,7 @@
 
 Welcome to the SQL evaluated project.
 
-This project aimed at examining data comprising of 5 tables spanning a period of 1 year, for a e-commerce site.
+This project aimed at examining data comprising of 5 tables spanning a period of 1 year begining Aug 1, 2016 to Aug 1, 2017, for a e-commerce site.
 Applying combined, learned and researched concepts in SQL to clean, QA, analyze and report on the ecomerce historical data to identify patterns, correlations between data types, and draw informed conclusions and inferences from the data, for decision making and further investigation.
 
 
@@ -17,7 +17,7 @@ The ecommerce site is located, or at least targetted at the US market, based on 
 ## Process
 ### (your step 1)
 
-Data cleaning, data quality assurance
+Employed standard data cleaning techniques detailed in the data cleaning and QA sections.
 
 ### (your step 2)
 
@@ -26,6 +26,7 @@ Data analysis, data interpretation
 ## Results
 
 The results are listed in the answers question of the document
+An unknown city and Mountainside city both in the US led in revenue from purchases
 
 
 
@@ -33,6 +34,7 @@ The results are listed in the answers question of the document
 (discuss challenges you faced in the project)
 
 Not knowing the significance of  missing data values,and their potential impact on the results
+It is also unknown due to lack of contextual preceeding and followingdata, if this data set is within normal expected performance
 
 
 ## Future Goals
