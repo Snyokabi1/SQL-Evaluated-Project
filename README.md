@@ -8,6 +8,7 @@ To apply combined, learned and researched concepts in SQL to clean, QA, analyze 
 Aimed at identifying risks and potential opportunities for the ecommerce website.
 
 # Assumptions
+
 The ecommerce site is located, or at least targetted at he US market, based on the majority of the transaction's geographical location
 
 
@@ -20,9 +21,12 @@ Data analysis, data interpretation
 ## Results
 (fill in what you discovered this data could tell you and how you used the data to answer those questions)
 
+
 ## Challenges 
 (discuss challenges you faced in the project)
-Not knowing the significance of the missing values,and their potential impact on the results
+
+Not knowing the significance of  missing data values,and their potential impact on the results
+
 
 ## Future Goals
 (what would you do if you had more time?)
