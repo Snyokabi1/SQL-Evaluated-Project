@@ -39,6 +39,7 @@ It is also unknown due to lack of contextual preceeding and followingdata, if th
 
 ## Future Goals
 (what would you do if you had more time?)
+
 Explore what products were popular in other countries and why, and explore viability of this potential opprtunity
 Deep dive on the reasons why the USA was the leading market, to ascertain if strategies employed can be replicated in other markets
 
