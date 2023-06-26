@@ -25,7 +25,8 @@ Data analysis, data interpretation
 
 ## Results
 
-The results are listed int he answers question of the document
+The results are listed in the answers question of the document
+
 
 
 ## Challenges 
@@ -38,3 +39,7 @@ Not knowing the significance of  missing data values,and their potential impact 
 (what would you do if you had more time?)
 Explore what products were popular in other countries and why, and explore viability of this potential opprtunity
 Deep dive on the reasons why the USA was the leading market, to ascertain if strategies employed can be replicated in other markets
+
+Further investigation into the low website visitor to purchase conversion, 
+As well as the visits that lasted 0 seconds, for technical glitch, access issues or other avoidable barriers
+
