@@ -8,10 +8,14 @@ QA Process:
 
 Describe your QA process and include the SQL queries used to execute it.
 
-Examining whole database, example. How many tables and how they are related, and what each represents, 
+Examining whole database, example. How many tables, how they are related, and what information each represents
+
+'''
 
 SELECT *
-From analyticsS
+From analytics
+
+'''
 
 Retrieving sample data by adding a LIMIT BY clause to the above query to further examime a smaller sample of rows
 
